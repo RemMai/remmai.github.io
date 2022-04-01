@@ -80,9 +80,7 @@ theme: Sakura
 deploy:
   type: git
   repo: 
-    # github: git@github.com:honjun/honjun.github.io.git
-    # github: https://github.com/honjun/honjun.github.io.git
-    coding: https://e.coding.net/remmai/blog.git
+    github: https://github.com/RemMai/remmai.github.io.git
   branch: master
 
 # backup
@@ -90,8 +88,7 @@ backup:
   type: git
   message: backup my blog of http://blog.remmai.cn/
   repository:
-    # github: https://github.com/honjun/honjun.github.io.git,backup
-    coding: https://e.coding.net/remmai/blog.git,backup
+    coding: https://github.com/RemMai/remmai.github.io,backup
 
 #RSS
 feed:
