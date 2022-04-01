@@ -88,7 +88,7 @@ deploy:
 # backup
 backup:
   type: git
-  message: backup my blog of https://blog.remmai.cn/
+  message: backup my blog of http://blog.remmai.cn/
   repository:
     # github: https://github.com/honjun/honjun.github.io.git,backup
     coding: https://e.coding.net/remmai/blog.git,backup
