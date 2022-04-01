@@ -1,0 +1,101 @@
+# site name
+title: RemMai
+prefixName: 
+siteName: RemMai
+# favicon and site master avatar
+favicon: /images/favicon.ico
+avatar: http://q1.qlogo.cn/g?b=qq&nk=2464233121&s=640
+url: https://blog.remmai.cn
+description: 一个运气不是那么好的男孩~
+cdn: https://cdn.jsdelivr.net/gh/remmai/cdn@1.0
+pjax: 1
+# 1开启
+mathjax: 0
+
+# notice: hexo-Sakura主题已经开源，目前正在开发中...
+# lazyloadImg: https://cdn.jsdelivr.net/gh/remmai/cdn@1.0/img/loader/orange.progress-bar-stripe-loader.svg
+
+menus:
+  首页: { path: /, fa: fa-fort-awesome faa-shake }
+  标签: {path: /tags/, fa: fa-tag }
+  留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
+  友人帐: { path: /links/, fa: fa-link faa-shake }
+  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
+  关于: { path: /about/, fa: fa-meetup ,submenus: { 
+    音乐: {path: /music/, fa:  fa-music }, 
+  }}
+  RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+
+
+# Home page sort type: -1: newer first，1: older first.
+homePageSortType: -1
+# Home page article shown number)
+homeArticleShown: 10
+# 背景图片 更好的修改
+bg:
+  - http://p5.qhimg.com/bdr/__85/t01651361eaedad44f4.jpg
+  - https://w.wallhaven.cc/full/w8/wallhaven-w8gjv6.jpg
+  - https://w.wallhaven.cc/full/n6/wallhaven-n66p6q.jpg
+  - http://p6.qhimg.com/bdr/__85/t010448c46c1ecf7cab.jpg
+  - http://p8.qhimg.com/bdr/__85/t01e467a69210d5812a.jpg
+  - http://121.40.114.220/wp-content/uploads/2016/12/nidemingzi.jpg
+  - http://www.obzhi.com/wp-content/uploads/2019/12/fengling.jpg
+  - http://www.obzhi.com/wp-content/uploads/2019/10/67178007_p0.jpg
+
+# 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
+bgclass: filter-dim
+
+# startdash url, title, desc img
+startdash: 
+  - {url: http://github.com/remmai, title: github, desc: 白菜的仓库, img: /img/startdash/sakura.md.png}
+  - {url: http://space.bilibili.com/32037194, title: Bilibili, desc: RemMai的B站空间, img: /img/startdash/bilibili.jpg}
+  # - {url: /, title: hojun的万事屋, desc: 技术服务, img: /img/startdash/wangshiwu.jpg}
+
+
+
+# your site build time or founded date
+siteBuildingTime: 04/09/2020
+
+#social  url, img PC端配置
+social:
+  Github: {url: http://github.com/remmai, img: /img/social/github.png}
+  网易云音乐: {url: https://music.163.com/#/user/home?id=1638238332, img: /img/social/wangyiyun.png}
+  知乎: {url: https://www.zhihu.com/people/remmai, img: /img/social/zhihu.png}
+  邮箱: {url: /email/, img: /img/social/email.svg}
+  微信: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+  # QQ: {url: /#, qrcode: /img/custom/qq.png, img: /img/social/qq.png}
+
+
+msocial:
+  github: {url: http://github.com/remmai, fa: fa-github, color: 333}
+  qq: {url: https://wpa.qq.com/msgrd?v=3&uin=2464233121&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
+
+donate:
+  # paypal: https://www.paypal.me/hojuncn
+  alipay: /img/custom/donate/AliPayQR.jpg
+  wechat: /img/custom/donate/WeChanQR.jpg
+  wechatSQ: /img/custom/donate/WeChanSQ.jpg
+
+# 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
+movies:
+  url: \#
+  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
+  name: \#
+
+aplayer: 
+  id: 2467621997
+  server: netease
+  type: playlist
+  fixed: true
+  autoplay: false
+  loop: all
+  order: random
+  preload: auto
+  volume: 0.7
+  mutex: true
+
+# Valine
+valine: true
+v_appId: yzjoe9wTvsgFRsJdrbPR4SsY-gzGzoHsz
+v_appKey: IpeshFMlvCK9WzJg8LFwR6Dd
+
