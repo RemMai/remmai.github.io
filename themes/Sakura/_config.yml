@@ -49,9 +49,6 @@ bgclass: filter-dim
 startdash: 
   - {url: http://github.com/remmai, title: github, desc: 白菜的仓库, img: /img/startdash/sakura.md.png}
   - {url: http://space.bilibili.com/32037194, title: Bilibili, desc: RemMai的B站空间, img: /img/startdash/bilibili.jpg}
-  # - {url: /, title: hojun的万事屋, desc: 技术服务, img: /img/startdash/wangshiwu.jpg}
-
-
 
 # your site build time or founded date
 siteBuildingTime: 04/09/2020
