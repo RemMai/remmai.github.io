@@ -59,8 +59,8 @@ pagination_dir: page
 include: null
 exclude: null
 ignore: null
-theme: vivia
-# remote_theme: remmai/vivia
+# theme: vivia
+remote_theme: remmai/vivia
 deploy:
   type: 'git'
   repo: 'https://github.com/RemMai/remmai.github.io.git'
