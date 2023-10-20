@@ -27,15 +27,18 @@ avatar: https://avatars.githubusercontent.com/u/42856213?v=4 # 头像图片文�
 author: RemMai
 subtitle: Love 🍧
 links:
-  - name: Twitter
-    icon: fa-brands fa-wechat # 访问 https://fontawesome.com/search 获取图标代码
-    url: https://twitter.com
-  - name: Steam
-    icon: fa-brands fa-steam
-    url: https://store.steampowered.com
+  - name: GitLab
+    icon: fa-brands fa-gitlab # 访问 https://fontawesome.com/search 获取图标代码
+    url: http://remmai.com:6500/RemMai
   - name: GitHub
     icon: fa-brands fa-github
     url: https://github.com/RemMai
+  - name: Alist
+    icon: fa-solid fa-cloud
+    url: http://remmai.com:5244
+  - name: QQ (2464233121)
+    icon: fa-brands fa-qq
+    url: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2464233121&website=www.oicqzone.com
 
 # 侧边栏
 sidebar:
@@ -45,8 +48,8 @@ sidebar:
     sticky: # 固定在页面顶部的组件
       - category
       - tag
-#      - archive
-#      - recent_posts
+      - archive
+      - recent_posts
 
 # 侧边栏组件设置
 archive_type: "monthly"

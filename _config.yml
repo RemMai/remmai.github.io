@@ -61,6 +61,8 @@ exclude: null
 ignore: null
 theme: vivia
 deploy:
-  type: ''
+  type: 'git'
+  repo: 'https://github.com/RemMai/blogs.github.io.git'
+  branch: 'main'
 archive_generator:
   per_page: 0
