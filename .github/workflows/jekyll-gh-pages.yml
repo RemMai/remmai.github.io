@@ -3,7 +3,7 @@ name: Pages
 on:
   push:
     branches:
-      - main # default branch
+      - main 
 
 jobs:
   pages:
@@ -11,33 +11,34 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: 拉取主仓库
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           # If your repository depends on submodule, please see: https://github.com/actions/checkout
           submodules: recursive
-      - name: Checkout theme repo #检查主题
+      - name: 拉取主题
         uses: actions/checkout@v4
         with:
           repository: ${{ vars.THEME_REPO }}
           ref: ${{ vars.THEME_BRANCH }}
           path: themes/vivia
-      - name: Use Node.js 16.x
+      - name: 安装NodeJs
         uses: actions/setup-node@v2
         with:
           node-version: "16"
-      - name: Cache NPM dependencies
+      - name: 缓存NPM依赖
         uses: actions/cache@v2
         with:
           path: node_modules
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
-      - name: Install Dependencies
+      - name: 安装依赖
         run: npm install
-      - name: Build
+      - name: 生成
         run: npm run build
-      - name: Deploy 
+      - name: 发布
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
