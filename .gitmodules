@@ -1,0 +1,3 @@
+[submodule "theme/vivia"]
+	path = theme/vivia
+	url = https://github.com/RemMai/vivia.git
