@@ -34,10 +34,8 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
-      - name: 安装PNPM
-        run: npm install -g pnpm
-      - name: 安装依赖
-        run: pnpm install
-      - name: 发布
-        run: pnpm run deploy
-  
+        run:
+          - "npm install -g pnpm"
+          - "pnpm install"
+          - "pnpm run deploy"
+
