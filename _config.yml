@@ -62,8 +62,8 @@ ignore: null
 theme: vivia
 # remote_theme: remmai/vivia
 deploy:
-  type: 'git'
-  repo: 'https://github.com/RemMai/remmai.github.io.git'
-  branch: 'main'
+  type: git
+  repo: https://github.com/RemMai/remmai.github.io.git
+  branch: gh-pages
 archive_generator:
   per_page: 0
