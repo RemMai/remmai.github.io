@@ -34,10 +34,12 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
+      - name: 安装PNPM
+        run: npm install -g pnpm
       - name: 安装依赖
-        run: npm install
+        run: pnpm install
       - name: 生成
-        run: npm run build
+        run: pnpm run build
       - name: 发布
         uses: peaceiris/actions-gh-pages@v3
         with:
