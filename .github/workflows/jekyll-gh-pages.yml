@@ -11,11 +11,17 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           # If your repository depends on submodule, please see: https://github.com/actions/checkout
           submodules: recursive
+      - name: Checkout theme repo #检查主题
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.THEME_REPO }}
+          ref: ${{ vars.THEME_BRANCH }}
+          path: themes/vivia
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
@@ -31,7 +37,7 @@ jobs:
         run: pnpm install
       - name: Build
         run: pnpm run build
-      - name: Deploy
+      - name: Deploy 
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
