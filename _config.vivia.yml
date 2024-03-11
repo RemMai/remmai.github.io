@@ -13,7 +13,7 @@ favicon: # Favicon 文件路径，相对于 /source 目录（若你的 Favicon �
 # 横幅图片
 banner:
   enable: true # 是否显示横幅图片
-  url: https://disk.egeel.com/csc/img/23/10/19/adwwadwa211231.jpg # 横幅图片文件路径，相对于 /source 目录，也可填写网络图片 URL
+  url: https://ice.frostsky.com/2024/03/11/76427a856c70ffcf66daa1ebae0e6023.png # 横幅图片文件路径，相对于 /source 目录，也可填写网络图片 URL
   position: center # 决定图片将如何被裁剪，对应 CSS 中的 "object-position" 属性
   onAllPages: true # 在所有页面上显示横幅，而不是只在首页显示
 
