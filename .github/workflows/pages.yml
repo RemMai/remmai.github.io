@@ -21,7 +21,7 @@ jobs:
       - name: 拉取主题
         uses: actions/checkout@v4
         with:
-          repository: https://github.com/RemMai/vivia.git #${{ vars.THEME_REPO }}
+          repository: RemMai/vivia #${{ vars.THEME_REPO }}
           ref: main # ${{ vars.THEME_BRANCH }}
           path: themes/vivia
       - name: 安装NodeJs
