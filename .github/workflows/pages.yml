@@ -13,7 +13,7 @@ jobs:
       contents: write
     steps:
       - name: 拉取主仓库
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           # If your repository depends on submodule, please see: https://github.com/actions/checkout
